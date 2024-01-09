@@ -27,6 +27,21 @@
          font-size: 16px;
       }
 
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+         body, center, table {
+            background: #2d2d2d!important;
+            color: #ffffff!important;
+         }
+         .darkmode-transparent {
+            background-color: transparent!important;
+         }
+      }
+   </style>
+
    </style>
    
 	<!--[if (gte mso 9)|(IE)]>
@@ -58,7 +73,7 @@
          <!--[if (gte mso 9)|(IE)]>
             <table width="600" align="center" style="border-spacing:0;color:#565656;" role="presentation">
             <tr>
-            <td style="padding:0;">
+            <td style="padding:10;">
          <![endif]-->
 
    <table align="center" style="border-spacing:0; font-family:'Lato',sans-serif, Arial, Helvetica; padding:0;width: 100%; max-width: 600px;" role="presentation">
